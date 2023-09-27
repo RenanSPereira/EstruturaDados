@@ -18,7 +18,6 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Exercicios\Exercicios.csproj" />
-    <ProjectReference Include="..\..\src\EstruturasDados\EstruturasDados.csproj" />
+    <ProjectReference Include="..\..\src\Algoritmos\Algoritmos.csproj" />
   </ItemGroup>
 </Project>

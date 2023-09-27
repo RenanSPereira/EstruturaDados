@@ -11,9 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{330FC063
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstruturasDados.Test", "tests\EstruturasDados.Test\EstruturasDados.Test.csproj", "{A08147A7-EB41-49F0-9C5A-BE2E9C38399C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicios", "src\Exercicios\Exercicios.csproj", "{8A28E337-85DD-4404-BA0D-7255910F0B40}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algoritmos", "src\Algoritmos\Algoritmos.csproj", "{8A28E337-85DD-4404-BA0D-7255910F0B40}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicios.Test", "tests\Exercicios.Test\Exercicios.Test.csproj", "{AF5AEF36-9685-4871-9088-08E46E33C4B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algoritmos.Test", "tests\Algoritmos.Test\Algoritmos.Test.csproj", "{AF5AEF36-9685-4871-9088-08E46E33C4B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
