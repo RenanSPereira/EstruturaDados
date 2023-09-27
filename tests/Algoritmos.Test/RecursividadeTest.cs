@@ -63,7 +63,7 @@ public class RecursividadeTest
     public void Deve_Retornar_Elemento_Minimo_De_Um_Vetor_De_Inteiros()
     {
         var vetor = new int[4] { 100, 2000, 4500, 2 };
-        Assert.Equal(2, Recursividade.ElementoMinimoVetor(vetor, vetor.Length));
+        Assert.Equal(2, ElementoMinimoVetor.Obter(vetor, vetor.Length));
     }
 
     [Fact(DisplayName = "Deve somar todos os elementos de um vetor")]
