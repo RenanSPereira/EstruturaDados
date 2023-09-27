@@ -31,16 +31,6 @@ public static class Recursividade
         return a;
     }
 
-    public static int MultiplicacaoIterativa(int a, int b)
-    {
-        var resultado = 0;
-        for (int i = 0; i < b; i++)
-        {
-            resultado += a;
-        }
-        return resultado;
-    }
-
     public static int Soma(int a, int b)
     {
         if (b == 0)
@@ -112,14 +102,15 @@ public static class Recursividade
         }
     }
 
-    public static int Media(int []a, int tamanho)
+    public static int Media(int[] a, int tamanho)
     {
         if (tamanho == 0)
         {
             return 0;
-        } else 
+        }
+        else
         {
-             return (a[tamanho - 1] + SomaElementosVetor(a, tamanho - 1)) / a.Length;
+            return (a[tamanho - 1] + SomaElementosVetor(a, tamanho - 1)) / a.Length;
         }
     }
 }

@@ -38,18 +38,6 @@ public class RecursividadeTest
         Assert.Equal(18, Recursividade.Multiplicacao(6, 3));
     }
 
-    [Fact(DisplayName = "6 X 1 = 6")]
-    public void Seis_X_1_Igual_6_Iterativo()
-    {
-        Assert.Equal(6, Recursividade.MultiplicacaoIterativa(6, 1));
-    }
-
-    [Fact(DisplayName = "6 X 3 = 18")]
-    public void Seis_X_3_Igual_18_Iterativa()
-    {
-        Assert.Equal(18, Recursividade.MultiplicacaoIterativa(6, 3));
-    }
-
     [Fact(DisplayName = "2 + 2 = 4")]
     public void Dois_Mais_Dois_Igual_4()
     {
