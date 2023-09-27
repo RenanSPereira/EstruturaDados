@@ -56,7 +56,7 @@ public class RecursividadeTest
     public void Deve_Retornar_Elemento_Maximo_De_Um_Vetor_De_Inteiros()
     {
         var vetor = new int[4] { 100, 2000, 4500, 2 };
-        Assert.Equal(4500, Recursividade.ElementoMaximoVetor(vetor, vetor.Length));
+        Assert.Equal(4500, ElementoMaximoVetor.Obter(vetor, vetor.Length));
     }
 
     [Fact(DisplayName = "Deve retornar o elemento minimo de um vetor de inteiros")]
