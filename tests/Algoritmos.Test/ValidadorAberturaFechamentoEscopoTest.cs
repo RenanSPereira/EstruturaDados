@@ -1,4 +1,5 @@
 using System.Collections;
+using Algoritmos.Iterativos;
 
 namespace Exercicios.Test;
 

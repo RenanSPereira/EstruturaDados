@@ -1,6 +1,6 @@
 using EstruturasDados;
 
-namespace Exercicios;
+namespace Algoritmos.Iterativos;
 
 public class ValidadorAberturaFechamentoEscopo
 {
@@ -49,9 +49,9 @@ public class ValidadorAberturaFechamentoEscopo
 
     private bool CorrespondenteSimboloAtual(char simboloRemovido)
     {
-        return (simboloRemovido == '(' && ObterSimboloAtual() == ')') 
-        || (simboloRemovido == '[' && ObterSimboloAtual() == ']')
-        || (simboloRemovido == '{' && ObterSimboloAtual() == '}');
+        return simboloRemovido == '(' && ObterSimboloAtual() == ')'
+        || simboloRemovido == '[' && ObterSimboloAtual() == ']'
+        || simboloRemovido == '{' && ObterSimboloAtual() == '}';
     }
 
     private char ObterSimboloAtual()
