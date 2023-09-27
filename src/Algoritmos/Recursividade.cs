@@ -7,14 +7,7 @@ public static class Recursividade
 
 
 
-    public static int Soma(int a, int b)
-    {
-        if (b == 0)
-        {
-            return a;
-        }
-        return Soma(++a, --b);
-    }
+
 
     public static int ElementoMaximoVetor(int[] a, int tamanho, int indice = 0)
     {
