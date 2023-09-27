@@ -91,6 +91,6 @@ public class RecursividadeTest
     public void Deve_Retornar_A_Media_Dos_Elementos_Do_Vetor()
     {
         var vetor = new int[4] { 2, 5, 2, 2 };
-        Assert.Equal(2, Recursividade.Media(vetor, vetor.Length));
+        Assert.Equal(2, MediaElementosVetor.Obter(vetor, vetor.Length));
     }
 }
