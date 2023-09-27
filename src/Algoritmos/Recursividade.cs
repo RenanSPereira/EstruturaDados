@@ -3,18 +3,7 @@ namespace Exercicios;
 
 public static class Recursividade
 {
-    public static int Fatorial(int numero)
-    {
-        if (numero == 0)
-        {
-            return 1;
-        }
-        else
-        {
-            numero *= Fatorial(numero - 1);
-        }
-        return numero;
-    }
+
 
     public static int Multiplicacao(int a, int b)
     {
