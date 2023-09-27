@@ -70,7 +70,7 @@ public class RecursividadeTest
     public void Deve_Somar_Todos_Elementos_De_Um_Vetor()
     {
         var vetor = new int[4] { 100, 2000, 4500, 2 };
-        Assert.Equal(6602, Recursividade.SomaElementosVetor(vetor, vetor.Length));
+        Assert.Equal(6602, SomaElementosVetor.Calcular(vetor, vetor.Length));
     }
 
     [Fact(DisplayName = "Deve retornar o produto dos elementos do vetor")]

@@ -13,17 +13,7 @@ public static class Recursividade
 
 
 
-    public static int SomaElementosVetor(int[] a, int tamanho)
-    {
-        if (tamanho == 0)
-        {
-            return 0;
-        }
-        else
-        {
-            return a[tamanho - 1] + SomaElementosVetor(a, tamanho - 1);
-        }
-    }
+
 
     public static int MultiplicacaoElementosVetor(int[] a, int tamanho)
     {
@@ -45,7 +35,7 @@ public static class Recursividade
         }
         else
         {
-            return (a[tamanho - 1] + SomaElementosVetor(a, tamanho - 1)) / a.Length;
+            return (a[tamanho - 1] + Media(a, tamanho - 1)) / a.Length;
         }
     }
 }
