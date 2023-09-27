@@ -1,7 +1,18 @@
 using System.Collections;
 using Algoritmos.Iterativos;
 
-namespace Exercicios.Test;
+namespace Algoritmos.Test.Iterativos;
+
+public class ValidadorAberturaFechamentoEscopoTest
+{
+    [Theory(DisplayName = "Deve validar")]
+    [ClassData(typeof(TestDataGenerator))]
+    public void Deve_Validar(string valor, bool esperado)
+    {
+        var validador = new ValidadorAberturaFechamentoEscopo(valor);
+        Assert.Equal(esperado, validador.Validar());
+    }
+}
 
 public class TestDataGenerator : IEnumerable<object[]>
 {
@@ -28,15 +39,4 @@ public class TestDataGenerator : IEnumerable<object[]>
 
     IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();
 
-}
-
-public class ValidadorAberturaFechamentoEscopoTest
-{
-    [Theory(DisplayName = "Abertura E Fechamento De Escopo Deve Estar Valida")]
-    [ClassData(typeof(TestDataGenerator))]
-    public void Abertura_E_Fechamento_De_Escopo_Deve_Estar_Valida(string valor, bool esperado)
-    {
-        var validador = new ValidadorAberturaFechamentoEscopo(valor);
-        Assert.Equal(esperado, validador.Validar());
-    }
 }
