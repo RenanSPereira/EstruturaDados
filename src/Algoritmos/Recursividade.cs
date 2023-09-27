@@ -9,24 +9,7 @@ public static class Recursividade
 
 
 
-    public static int ElementoMaximoVetor(int[] a, int tamanho, int indice = 0)
-    {
-        if (tamanho == 0)
-        {
-            return a[indice];
-        }
-        else
-        {
-            if (a[indice] < a[tamanho - 1])
-            {
-                return ElementoMaximoVetor(a, tamanho - 1, tamanho - 1);
-            }
-            else
-            {
-                return ElementoMaximoVetor(a, tamanho - 1, indice);
-            }
-        }
-    }
+
 
     public static int ElementoMinimoVetor(int[] a, int tamanho, int indice = 0)
     {
