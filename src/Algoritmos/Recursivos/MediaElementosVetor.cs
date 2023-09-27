@@ -2,15 +2,15 @@ namespace Algoritmos.Recursivos;
 
 public static class MediaElementosVetor
 {
-    public static int Obter(int[] a, int tamanho)
+    public static float Obter(int[] a, int tamanho, int soma)
     {
         if (tamanho == 0)
         {
-            return 0;
+            return soma * 1.0f  / a.Length;
         }
         else
         {
-            return (a[tamanho - 1] + Obter(a, tamanho - 1)) / a.Length;
+            return  Obter(a, tamanho - 1, soma += a[tamanho -1]);
         }
     }
 }
