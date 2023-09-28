@@ -11,6 +11,6 @@ public class FibonacciTest
     [InlineData(10, 55)]
     public void Deve_Calcular_O_Numero_De_Fibonacci(int entrada, int resultado)
     {
-        Assert.Equal(resultado, Fibonacci.calcular(entrada));
+        Assert.Equal(resultado, Fibonacci.Calcular(entrada));
     }
 }

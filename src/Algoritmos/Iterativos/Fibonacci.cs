@@ -2,7 +2,7 @@ namespace Algoritmos.Iterativos;
 
 public static class Fibonacci
 {
-    public static int calcular(int numero)
+    public static int Calcular(int numero)
     {
         if (numero <= 1)
             return numero;
