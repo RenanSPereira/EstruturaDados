@@ -13,4 +13,9 @@ public class BuscaBinariaTest
     {
         Assert.Equal(resultado, BuscaBinaria.Buscar(_vetor, entrada, 0, _vetor.Length));
     }
+    [Fact(DisplayName = "Deve retornar -1 para valor nao encontrado")]
+    public void Deve_Retornar_Menos_Um_Para_Valor_Nao_Encontrado()
+    {
+        Assert.Equal(-1, BuscaBinaria.Buscar(_vetor, 20, 0, _vetor.Length));
+    }
 }
