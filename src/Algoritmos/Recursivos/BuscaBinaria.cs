@@ -2,22 +2,22 @@ namespace Algoritmos.Recursivos;
 
 public static class BuscaBinaria
 {
-    public static int Buscar(int[] a, int numero, int indiceInicio, int indiceFim)
+    public static int Buscar(int[] a, int numero, int inicio, int fim)
     {
-        if (indiceInicio > indiceFim) return -1;
+        if (inicio > fim) return -1;
 
-        var indiceMeio = (indiceInicio + indiceFim) / 2;
+        var meio = (inicio + fim) / 2;
 
-        if (numero == a[indiceMeio]) return a[indiceMeio];
+        if (numero == a[meio]) return a[meio];
 
-        if (numero < a[indiceMeio])
+        if (numero < a[meio])
         {
-            return Buscar(a, numero, indiceInicio, indiceMeio - 1);
+            return Buscar(a, numero, inicio, meio - 1);
         }
         else
         {
 
-            return Buscar(a, numero, indiceMeio + 1, indiceFim);
+            return Buscar(a, numero, meio + 1, fim);
         }
     }
 }
