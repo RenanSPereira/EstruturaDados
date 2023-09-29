@@ -9,8 +9,6 @@ public static class BuscaBinaria
 
         for (int inicio = 0; inicio <= meio; inicio++)
         {
-            if (inicio > fim) return -1;
-            
             if (numero == a[meio]) return a[meio];
 
             if (numero < a[meio])
@@ -27,6 +25,8 @@ public static class BuscaBinaria
                 meio = (inicio + fim) / 2;
             }
         }
+        if (numero != a[meio]) return -1;
+        
         return a[meio];
     }
 }
