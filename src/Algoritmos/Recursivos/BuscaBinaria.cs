@@ -2,13 +2,13 @@ namespace Algoritmos.Recursivos;
 
 public class BuscaBinaria
 {
-    private int[] a;
-    private int numero;
+    private readonly int[] _a;
+    private readonly int _numero;
 
     public BuscaBinaria(int[] a, int numero)
     {
-        this.a = a;
-        this.numero = numero;
+        _a = a;
+        _numero = numero;
     }
 
     public int Buscar(int inicio, int fim)
@@ -17,9 +17,9 @@ public class BuscaBinaria
 
         var meio = (inicio + fim) / 2;
 
-        if (numero == a[meio]) return a[meio];
+        if (_numero == _a[meio]) return _a[meio];
 
-        if (numero < a[meio])
+        if (_numero < _a[meio])
         {
             return Buscar(inicio, meio - 1);
         }
