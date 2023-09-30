@@ -1,8 +1,17 @@
 namespace Algoritmos.Recursivos;
 
-public static class BuscaBinaria
+public class BuscaBinaria
 {
-    public static int Buscar(int[] a, int numero, int inicio, int fim)
+    private int[] a;
+    private int numero;
+
+    public BuscaBinaria(int[] a, int numero)
+    {
+        this.a = a;
+        this.numero = numero;
+    }
+
+    public int Buscar(int inicio, int fim)
     {
         if (inicio > fim) return -1;
 
@@ -12,12 +21,11 @@ public static class BuscaBinaria
 
         if (numero < a[meio])
         {
-            return Buscar(a, numero, inicio, meio - 1);
+            return Buscar(inicio, meio - 1);
         }
         else
         {
-
-            return Buscar(a, numero, meio + 1, fim);
+            return Buscar(meio + 1, fim);
         }
     }
 }

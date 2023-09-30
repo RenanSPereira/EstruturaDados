@@ -11,11 +11,13 @@ public class BuscaBinariaTest
     [InlineData(36, 36)]
     public void Deve_Encontrar_O_Numero(int entrada, int resultado)
     {
-        Assert.Equal(resultado, BuscaBinaria.Buscar(_vetor, entrada, 0, _vetor.Length -1));
+        var buscaBinaria = new BuscaBinaria(_vetor, entrada);
+        Assert.Equal(resultado, buscaBinaria.Buscar(0, _vetor.Length - 1));
     }
     [Fact(DisplayName = "Deve retornar -1 para valor nao encontrado")]
     public void Deve_Retornar_Menos_Um_Para_Valor_Nao_Encontrado()
     {
-        Assert.Equal(-1, BuscaBinaria.Buscar(_vetor, 20, 0, _vetor.Length -1));
+        var buscaBinaria = new BuscaBinaria(_vetor, 20);
+        Assert.Equal(-1, buscaBinaria.Buscar(0, _vetor.Length - 1));
     }
 }
