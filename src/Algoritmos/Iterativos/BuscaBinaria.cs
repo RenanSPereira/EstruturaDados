@@ -4,8 +4,8 @@ public static class BuscaBinaria
 {
     public static int Buscar(int[] a, int numero)
     {
-        var fim = a.Length;
-        var meio = a.Length / 2;
+        var fim = a.Length -1;
+        var meio = fim / 2;
 
         for (int inicio = 0; inicio <= meio; inicio++)
         {
